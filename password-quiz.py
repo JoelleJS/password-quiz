@@ -1,5 +1,5 @@
-import random
 from getpass import getpass
+from random import SystemRandom
 
 import bcrypt
 from consolemenu.console_menu import ConsoleMenu
@@ -8,6 +8,7 @@ from sqlitedict import SqliteDict
 
 db_file = 'passwords.sqlite3'
 encoding = 'utf-8'
+random = SystemRandom()
 
 
 class Passwords:
